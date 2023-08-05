@@ -1,0 +1,8 @@
+/Users/srihari/Desktop/Cambrian/Sem 2/Web/BookDatabase/obj/Debug/net7.0/BookDatabase.csproj.AssemblyReference.cache
+/Users/srihari/Desktop/Cambrian/Sem 2/Web/BookDatabase/obj/Debug/net7.0/BookDatabase.GeneratedMSBuildEditorConfig.editorconfig
+/Users/srihari/Desktop/Cambrian/Sem 2/Web/BookDatabase/obj/Debug/net7.0/BookDatabase.AssemblyInfoInputs.cache
+/Users/srihari/Desktop/Cambrian/Sem 2/Web/BookDatabase/obj/Debug/net7.0/BookDatabase.AssemblyInfo.cs
+/Users/srihari/Desktop/Cambrian/Sem 2/Web/BookDatabase/obj/Debug/net7.0/BookDatabase.csproj.CoreCompileInputs.cache
+/Users/srihari/Desktop/Cambrian/Sem 2/Web/BookDatabase/obj/Debug/net7.0/BookDatabase.MvcApplicationPartsAssemblyInfo.cache
+/Users/srihari/Desktop/Cambrian/Sem 2/Web/BookDatabase/obj/Debug/net7.0/BookDatabase.RazorAssemblyInfo.cache
+/Users/srihari/Desktop/Cambrian/Sem 2/Web/BookDatabase/obj/Debug/net7.0/BookDatabase.RazorAssemblyInfo.cs
