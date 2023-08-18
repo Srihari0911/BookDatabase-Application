@@ -1,16 +1,46 @@
-﻿using System.ComponentModel.DataAnnotations;
-using BookDataBase.Models;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
 
-namespace BookDataBase.Models
+namespace BookDatabase.Models
 {
-    public class Author
+    public class Functions
     {
-        [Key]
-        public Guid Id { get; set; }
-        public string? Name { get; set; }
-        public DateTime? DateOfBirth { get; set; }
+        private SqlConnection Con;
+        private SqlCommand cmd;
+        private DataTable dt;
+        private SqlDataAdapter sda;
+        private string ConStr;
+        public Functions()
+        {
+            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\admin\Documents\BookShopASPDB.mdf;Integrated Security=True;Connect Timeout=30";
+            Con = new SqlConnection(ConStr);
+            cmd = new SqlCommand();
+            cmd.Connection = Con;
+        }
 
-        // One-to-many relationship with books
-        public List<Book>? Books { get; set; }
+        public DataTable GetData(string Query)
+        {
+            dt = new DataTable();
+            sda = new SqlDataAdapter(Query, ConStr);
+            sda.Fill(dt);
+            return dt;
+        }
+
+        public int SetData(string Query)
+        {
+            int cnt = 0;
+            if(Con.State == ConnectionState.Closed)
+            {
+                Con.Open();
+            }
+            cmd.CommandText = Query;
+            cnt = cmd.ExecuteNonQuery();
+            Con.Close();
+            return cnt;
+        }
     }
 }
