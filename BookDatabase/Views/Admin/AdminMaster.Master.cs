@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace OnlineBookShopTuto.Views.Admin
+namespace BookDatabase.Views.Admin
 {
     public partial class AdminMaster : System.Web.UI.MasterPage
     {
